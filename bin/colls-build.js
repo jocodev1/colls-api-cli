@@ -1,5 +1,8 @@
 #!/usr/bin/env node
+const chalk = require('chalk')
 const program = require('commander')
+const request = require('request')
+const generate = require('../lib/generate')
 
 program
   .description('Will build the default API structure for your project.')
@@ -12,4 +15,8 @@ var path = program.args[0] !== undefined
   ? program.args[0]
   : defaultPath
 
-console.log(path)
+// Padding
+console.log()
+
+// Generate default API structure
+generate()
