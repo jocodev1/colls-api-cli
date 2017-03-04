@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-const chalk = require('chalk')
 const program = require('commander')
 const request = require('request')
 const generate = require('../lib/generate')
