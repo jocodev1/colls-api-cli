@@ -1,0 +1,23 @@
+{
+  "name": "colls-api-cli",
+  "version": "1.0.0",
+  "description": "Colls API CLI tool generate framework files.",
+  "main": "bin/colls.js",
+  "keywords": [
+    "Colls",
+    "API",
+    "CLI"
+  ],
+  "bin": {
+    "colls": "bin/colls.js",
+    "colls-build": "bin/colls-build.js"
+  },
+  "author": "Collier Devlin",
+  "license": "MIT",
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.9.0",
+    "request": "^2.80.0"
+  }
+}
