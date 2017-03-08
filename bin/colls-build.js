@@ -18,4 +18,4 @@ var path = program.args[0] !== undefined
 console.log()
 
 // Generate default API structure
-generate()
+generate('.')

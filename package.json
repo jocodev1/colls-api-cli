@@ -19,5 +19,10 @@
     "co-prompt": "^1.0.0",
     "commander": "^2.9.0",
     "request": "^2.80.0"
+  },
+  "devDependencies": {
+    "async": "^2.1.5",
+    "cli-prompt": "^0.6.0",
+    "metalsmith": "^2.3.0"
   }
 }
