@@ -15,14 +15,14 @@
   "author": "Collier Devlin",
   "license": "MIT",
   "dependencies": {
+    "async": "^2.1.5",
+    "cli-prompt": "^0.6.0",
     "co": "^4.6.0",
     "co-prompt": "^1.0.0",
     "commander": "^2.9.0",
+    "consolidate": "^0.14.5",
+    "handlebars": "^4.0.6",
+    "metalsmith": "^2.3.0",
     "request": "^2.80.0"
-  },
-  "devDependencies": {
-    "async": "^2.1.5",
-    "cli-prompt": "^0.6.0",
-    "metalsmith": "^2.3.0"
   }
 }

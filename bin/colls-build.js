@@ -8,7 +8,7 @@ program
   .option('-p, --path', 'Set the default path.')
   .parse(process.argv)
 
-const defaultPath = './'
+const defaultPath = '.'
 
 var path = program.args[0] !== undefined
   ? program.args[0]
@@ -18,4 +18,4 @@ var path = program.args[0] !== undefined
 console.log()
 
 // Generate default API structure
-generate('.')
+generate(defaultPath)
