@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+const path = require('path')
 const program = require('commander')
 const request = require('request')
 const generate = require('../lib/generate')
@@ -8,14 +9,10 @@ program
   .option('-p, --path', 'Set the default path.')
   .parse(process.argv)
 
-const defaultPath = '.'
-
-var path = program.args[0] !== undefined
-  ? program.args[0]
-  : defaultPath
+var to = path.resolve(program.args[1] || '.')
 
 // Padding
 console.log()
 
 // Generate default API structure
-generate(defaultPath)
+generate(to)
