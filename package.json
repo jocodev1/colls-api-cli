@@ -1,6 +1,6 @@
 {
   "name": "colls-api-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Colls API CLI tool generate framework files.",
   "main": "bin/colls.js",
   "keywords": [

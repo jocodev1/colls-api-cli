@@ -1,11 +1,6 @@
 # Colls Framework CLI
 A CLI tool to build project scaffolding for your new Colls API.
 
-## Pre-requisites
-
-- Install & run `MongoDB Server` for your local environment
-- (Optional) Install `nodemon` to run your application.
-
 ## Installation
 Install `colls-api-cli`
 
@@ -13,7 +8,9 @@ Install `colls-api-cli`
 npm install colls-api-cli -g
 ```
 
-Navigate to your new desired project location. Run the following command to initiate prompts to begin your build.
+Navigate to your new desired project location.
+
+Run the following command to initiate prompts to begin your build.
 
 ```sh
 colls build
@@ -27,7 +24,25 @@ Next, install all project dependencies.
 npm install
 ```
 
-Now your API setup has been completed and you should be able to run the main `app.js` file to serve your api.
+Now your new API setup has been completed.
+
+## Running the API
+
+I would personally recommend installing `nodemon` to serve your api on your local environment.
+
+```sh
+npm install nodemon -g
+```
+
+Nodemon makes it much easier for development. You can change any code within the `app.js` code structure and nodemon will automatically apply changes and restart the server as soon as you save the changes in your files.
+
+To boot up your server, simply run the following command.
+
+```sh
+nodemon app
+```
+
+## Try it out!
 
 By default, your api will be served on port `3000`. To test your first endpoint, navigate to...
 http://localhost:3000/api

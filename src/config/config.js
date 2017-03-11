@@ -1,5 +1,5 @@
 module.exports = {
-    secret: 'secret',
+    secret: 'secret', // you should consider changing this
 
     /**
      * Origins Header Information
@@ -10,16 +10,14 @@ module.exports = {
      */
     prod: {
       origins: [
-        // 'http://your-prod-domain.com',
-        '*' // NOT SECURE
+        '*' // NOT SECURE - Change to 'http://your-prod-domain.com',
       ]
     },
     dev: {
       origins: [
-        // 'http://your-local-domain.com',
-        '*' // NOT SECURE
+        '*' // NOT SECURE - Change to 'http://your-local-domain.com'
       ]
     },
     database: 'mongodb://localhost:27017/<mongo-db-name>',
-    version: 'v1.0'
+    version: 'v1'
 };
